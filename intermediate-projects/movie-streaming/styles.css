@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#main-navigation-bar{
+    display: flex;
+    flex-direction: row;
+}
+
+#main-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navigation-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#site-logo {
+    border-radius: 50%;
+}
+
+#platform-name {
+    font-size: 15px;
+}
+
+#navigation-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #666;
+    transform: scale(1.1);
+}
+
+#search-and-alerts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#search-box {
+    width: 200px;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+#search-button, #alert-button, #ad-free-button, .watch-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px; /* Makes the button round */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Adds a transition effect */
+}
+
+#search-button:hover, #alert-button:hover, #ad-free-button:hover, .watch-button:hover {
+    background-color: #666;
+    transform: scale(1.1); /* Slightly enlarges the button */
+}
+
+.movie-container {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.watch-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.watch-button:hover {
+    background-color: #666;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  
+
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+
+  .carousel {
+    display: flex;
+    height: 200px;
+    width: 100%;
+  }
+  
+  .carousel img {
+
+    width: auto;
+    height: 200px;
+    display: none;
+  }
+  
+  .carousel img.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+  }
+  
+  .carousel .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .carousel .arrow.left {
+    left: 10px;
+  }
+  
+  .carousel .arrow.right {
+    right: 10px;
+  }
+
+
+  #card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    border-radius: 5px;
+  }
+  
+  #card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
+  .poster {
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .movie-title {
+    color: #000;
+    font-size: 18px;
+  }
+  
+  .director, .duration, .release-date, .vote, .voters-count {
+    color: #555;
+  }
+  
+  #date, #vote-score, #voter-numbers {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .voters {
+    display: flex;
+    justify-content: space-between;
+  }
+  

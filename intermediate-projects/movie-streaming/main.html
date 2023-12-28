@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+<body>
+    
+<header id="main-header">
+
+    <div id="main-navigation-bar">
+
+        <div id="logo-container">
+            <img id="site-logo" style="height: 100px; width: 100px;" src="logo.png" alt="Site Logo">
+            <p id="platform-name">movie-watcher</p>
+        </div>
+
+        <ul id="navigation-menu">
+           <li class="nav-item">Home</li>
+           <li class="nav-item">Movies</li>
+           <li class="nav-item">Series</li>
+           <li class="nav-item">TV Shows</li>
+           <li class="nav-item">Services</li>
+           <li  class="nav-item">Contact</li>
+        </ul>
+
+    </div>
+
+<div id="search-and-alerts">
+
+    <input type="text" id="search-box">
+    <button id="search-button"><i class="bi bi-search"></i></button>
+    <button id="alert-button"><i class="bi bi-bell"></i></button>
+    <img id="user-avatar" src="" alt="User Avatar">
+    <button id="ad-free-button">Go Ad Free</button>
+
+</div>
+
+</header>
+
+
+<div class="GENRES" id="GENRES">
+
+    <button>Action</button>
+    <button>Drama</button>
+    <button>Romance</button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    
+</div>
+
+
+<h2>heighlights</h2>
+<div class="carousel">
+    <div class="arrow left" onclick="changeImage(-1)">&lt;</div>
+    <img src="images (1).jpeg" class="active">
+    <img src="images (2).jpeg">
+    <img src="Maze-Runner-Barco-Escape.jpg">
+    <img src="download.jpeg">
+    <div class="arrow right" onclick="changeImage(1)">&gt;</div>
+  </div>
+
+
+
+<h2>Movie Card</h2>
+
+<div class="main-content">
+
+
+  
+ 
+
+
+  <div class="card" id="card">
+    <img style="width: 100%; overflow: visible;" src="images.jpeg" alt="poster" class="poster" id="poster" style="width:100%">
+    <div class="container" id="container">
+      <h4 class="movie-title" id="movie-title"><b>Avatar</b></h4> 
+      <p class="director" id="director">jhon Doe</p> 
+      <p class="duration" id="duration">120 min</p>
+      <p class="release-date" id="release-date">Release date: <span id="date">34-13-2024</span></p>
+      <div class="voters" id="voters">
+        <p class="vote" id="vote">Vote: <span id="vote-score">4.2</span></p>
+        <p class="voters-count" id="voters-count">Voters: <span id="voter-numbers">9234</span></p>
+      </div>
+    </div>
+</div>
+
+
+    
+</div>
+
+   <script src="script.js"></script>
+
+</body>
+</html>
